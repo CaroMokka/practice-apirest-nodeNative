@@ -1,0 +1,3 @@
+- En la ruta de registro validar que no se repitan animales con la misma especie y el mismo nombre.
+- En la ruta de modificar cuando no consiga el animal a modificar responder con un código 404 y un mensaje que diga animal no encontrado.
+- En la ruta de eliminar cuando no consiga el animal a eliminar responder con un código 404 y un mensaje que diga animal no encontrado.
