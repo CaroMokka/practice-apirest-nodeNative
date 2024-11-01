@@ -1,1 +1,23 @@
-[{"id":"6a643dc8-fe38-45fd-abc0-5bdde9ea6289","nombre":"Simba","edad":8,"especie":"León","habitat":"Terrestre"}]
+[
+  {
+    "id": "8b0498b9-49d3-4b59-a079-5172db00d0c2",
+    "nombre": "Hachiko",
+    "edad": 5,
+    "especie": "Perro",
+    "habitat": "Terrestre"
+  },
+  {
+    "id": "c2258fcf-36b8-467c-8012-c96795e53220",
+    "nombre": "Simba",
+    "edad": 8,
+    "especie": "León",
+    "habitat": "Terrestre"
+  },
+  {
+    "id": "7cde2627-26aa-4040-a013-58fb04a993a4",
+    "nombre": "Nemo",
+    "edad": 2,
+    "especie": "Pez",
+    "habitat": "Acuatico"
+  }
+]
