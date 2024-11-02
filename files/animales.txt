@@ -1,9 +1,9 @@
 [
   {
     "id": "8b0498b9-49d3-4b59-a079-5172db00d0c2",
-    "nombre": "Hachiko",
-    "edad": 5,
-    "especie": "Perro",
+    "nombre": "Silvestre",
+    "edad": 8,
+    "especie": "Gato",
     "habitat": "Terrestre"
   },
   {
@@ -19,5 +19,12 @@
     "edad": 2,
     "especie": "Pez",
     "habitat": "Acuatico"
+  },
+  {
+    "id": "aebdab69-e51f-4e96-b383-dffd1c633531",
+    "nombre": "Benito",
+    "edad": 5,
+    "especie": "Gato",
+    "habitat": "Terrestre"
   }
 ]
