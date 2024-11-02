@@ -5,26 +5,5 @@
     "edad": 8,
     "especie": "Gato",
     "habitat": "Terrestre"
-  },
-  {
-    "id": "c2258fcf-36b8-467c-8012-c96795e53220",
-    "nombre": "Simba",
-    "edad": 8,
-    "especie": "León",
-    "habitat": "Terrestre"
-  },
-  {
-    "id": "7cde2627-26aa-4040-a013-58fb04a993a4",
-    "nombre": "Nemo",
-    "edad": 2,
-    "especie": "Pez",
-    "habitat": "Acuatico"
-  },
-  {
-    "id": "3c9cec01-1577-412f-8a70-0cb3b3287fd2",
-    "nombre": "Benito",
-    "edad": 5,
-    "especie": "Gato",
-    "habitat": "Terrestre"
   }
 ]

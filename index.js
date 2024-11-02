@@ -36,7 +36,7 @@ http
           }
           return false;
         });
-        console.log(contentFiltered);
+       
 
         res.setHeader("Content-Type", "aplication/json");
         res.writeHead(200);
@@ -66,24 +66,16 @@ http
             especie: body.especie,
             habitat: body.habitat,
           };
-          if(animal.nombre == body.nombre || animal.especie == body.especie){
-            res.writeHead(404, { "Content-Type": "application/json" })
-            res.end(JSON.stringify({ message: "Este animal ya existe dentro del registro" }))
-          } else {
-            contentJS.push(animal);
-            fs.writeFileSync(
-              dataAnimales,
-              JSON.stringify(contentJS, null, 2),
-              "utf-8"
-            );
-            res.writeHead(201, { "Content-Type": "application/json" });
+          contentJS.push(animal);
+          fs.writeFileSync(
+            dataAnimales,
+            JSON.stringify(contentJS, null, 2),
+            "utf-8"
+          );
+          res.writeHead(201, { "Content-Type": "application/json" });
           res.end(
             JSON.stringify({ message: "Registro éxitoso", data: animal })
           );
-          }
-          
-          
-          
         });
         //PUT
       } else if (method == "PUT") {
@@ -107,7 +99,7 @@ http
               )
             );
             if (body.nombre == contentJS[index].nombre) {
-              res.writeHead(400, { "Content-Type": "application/json"} )
+              res.writeHead(400, { "Content-Type": "application/json" });
               res.end(JSON.stringify({ message: "Este nombre ya existe" }));
             } else {
               contentJS[index] = { ...contentJS[index], ...body };
@@ -129,7 +121,26 @@ http
 
         //DELETE
       } else if (method == "DELETE") {
-        res.end("Eliminar Animales");
+        const params = urlParsed.query;
+
+        const contentText = fs.readFileSync(dataAnimales, "utf-8");
+        const contentJS = JSON.parse(contentText);
+        const hasAnimal = contentJS.find(animal => animal.id == params.id)
+        if (hasAnimal) {
+          const contentModificated = contentJS.filter(animal => animal.id != params.id)
+          fs.writeFileSync(
+            dataAnimales,
+            JSON.stringify(contentModificated, null, 2),
+            "utf-8"
+          );
+          res.writeHead(200, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ message: "Animal eliminado de la lista", data:  hasAnimal}));
+        } else {
+          res.writeHead(200, { "Content-Type": "application/json" });
+          res.end(
+            JSON.stringify({ message: "ID ingresado no existe" })
+          );
+        }
       }
     }
   })
