@@ -5,5 +5,19 @@
     "edad": 8,
     "especie": "Gato",
     "habitat": "Terrestre"
+  },
+  {
+    "id": "6e3bed95-a10f-49f8-9f16-613289126c43",
+    "nombre": "Hachiko",
+    "edad": 5,
+    "especie": "Perro",
+    "habitat": "Terrestre"
+  },
+  {
+    "id": "40c309cc-5ac9-4ab8-9364-fb5d5d03f8b3",
+    "nombre": "Silvestre",
+    "edad": 5,
+    "especie": "Gato",
+    "habitat": "Terrestre"
   }
 ]

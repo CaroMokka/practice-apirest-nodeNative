@@ -1,3 +1,4 @@
-Pendinng - En la ruta de registro validar que no se repitan animales con la misma especie y el mismo nombre.
+OK - En la ruta de registro validar que no se repitan animales con la misma especie y el mismo nombre.
 OK - En la ruta de modificar cuando no consiga el animal a modificar responder con un código 404 y un mensaje que diga animal no encontrado.
 OK - En la ruta de eliminar cuando no consiga el animal a eliminar responder con un código 404 y un mensaje que diga animal no encontrado.
+OK - El la ruta modificar validar que no haya otro animal (id diferente) con la misma especie y el mismo nombre
